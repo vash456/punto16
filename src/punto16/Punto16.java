@@ -26,7 +26,7 @@ public class Punto16 {
         Scanner lector = new Scanner(System.in);
         String titulo;
         int precio;
-        
+        //falta terminar
         System.out.println("");
         
     }
