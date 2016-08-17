@@ -55,8 +55,7 @@ public class Punto16 {
                         case 3: libro.setnum_pag();break;
                         case 4: libro.setaño_publicacion();break;
                         case 5: libro.mostrar();break;
-                        default: System.out.println("\nopcion no valida");
-                            break;
+                        default: break;
                     }
                 }while(opcion2 != 6);
             }else if(opcion == 2){
@@ -73,8 +72,7 @@ public class Punto16 {
                         case 2: disco.setprecio();break;
                         case 3: disco.setduracion_min();break;
                         case 4: disco.mostrar();break;
-                        default: System.out.println("\nopcion no valida");
-                            break;
+                        default: break;
                     }
                 }while(opcion3 != 5);
             }else if(opcion == 3){
