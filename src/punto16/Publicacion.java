@@ -4,17 +4,27 @@
  */
 package punto16;
 
+import java.util.Scanner;
+
 /**
  *
  * @author practi25
  */
 public class Publicacion {
     private String titulo;
-    private int precio;
+    private String precio;
+    private Scanner lector;
     
-    public Publicacion(String titulo, int precio){
-        this.titulo = titulo;
-        this.precio = precio;
+    public void settitulo(){
+        lector = new Scanner(System.in);
+        System.out.println("Ingrese titulo");
+        this.titulo = lector.nextLine();
+    }
+    
+    public void setprecio(){
+        lector = new Scanner(System.in);
+        System.out.println("Ingrese Precio");
+        this.precio = lector.next();
     }
     
     public void mostrar(){

@@ -4,26 +4,26 @@
  */
 package punto16;
 
+import java.util.Scanner;
+
 /**
  *
  * @author practi25
  */
 public class Disco extends Publicacion{
+    private Scanner lector;
+    private String duracion_min;
     
-    private int duracion_min;
-    
-    public Disco(String titulo, int precio){
-        super(titulo,precio);
+    public void setduracion_min(){
+        lector = new Scanner(System.in);
+        System.out.println("Ingrese la Duracion(min)");
+        duracion_min = lector.next();
     }
     
-    public void setduracion_min(int duracion_min){
-        this.duracion_min = duracion_min;
-    }
-    
-    @Override
+    //mostrar disco
     public void mostrar(){
         super.mostrar();
-        System.out.println("Duracion(min): "+this.duracion_min);
+        System.out.println("Duracion(min): "+duracion_min);
     }
     
 }
