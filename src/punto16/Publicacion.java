@@ -9,6 +9,7 @@ import java.util.Scanner;
 /**
  *
  * @author practi25
+ * 
  */
 public class Publicacion {
     private String titulo;
