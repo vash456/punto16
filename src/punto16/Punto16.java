@@ -33,7 +33,7 @@ public class Punto16 {
         int opcion2;
         int opcion3;
         do{
-            System.out.println("Escoja publicacion:");
+            System.out.println("\nEscoja publicacion:");
             System.out.println("1) Libro");
             System.out.println("2) Disco");
             System.out.println("3) Salir");
@@ -41,7 +41,7 @@ public class Punto16 {
             
             if(opcion == 1){
                 do{
-                    System.out.println("Ingresar las siguientes opciones del Libro:");
+                    System.out.println("\nIngresar las siguientes opciones del Libro:");
                     System.out.println("1) Titulo");
                     System.out.println("2) Precio");
                     System.out.println("3) Numero de paginas");
@@ -55,12 +55,13 @@ public class Punto16 {
                         case 3: libro.setnum_pag();break;
                         case 4: libro.setaño_publicacion();break;
                         case 5: libro.mostrar();break;
-                        default: break;
+                        default: System.out.println("\nopcion no valida");
+                            break;
                     }
                 }while(opcion2 != 6);
             }else if(opcion == 2){
                 do{
-                    System.out.println("Ingresar las siguientes opciones del Disco:");
+                    System.out.println("\nIngresar las siguientes opciones del Disco:");
                     System.out.println("1) Titulo");
                     System.out.println("2) Precio");
                     System.out.println("3) Duracion(min)");
@@ -72,12 +73,13 @@ public class Punto16 {
                         case 2: disco.setprecio();break;
                         case 3: disco.setduracion_min();break;
                         case 4: disco.mostrar();break;
-                        default: break;
+                        default: System.out.println("\nopcion no valida");
+                            break;
                     }
                 }while(opcion3 != 5);
             }else if(opcion == 3){
-                System.out.println("finalizando programa");
-            }else System.out.println("opcion no valida");
+                System.out.println("\nfinalizando programa");
+            }else System.out.println("\nopcion no valida");
             
         }while(opcion != 3);
         
